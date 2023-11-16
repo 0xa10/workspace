@@ -1,0 +1,13 @@
+shell /bin/zsh
+hardstatus alwayslastline
+hardstatus string "%{= g}[ %{G}%H%{-} ]%1`%10>%{-}%=%{w}%-Lw%{-}%{r}(%{-}%50>%{+u W}%n-%f %t%{-}%{r})%{-} %?%{w}%+Lw%{-} %?%= %-15<[ %{B}%d/%m%{-}%{W} %c %{-}]"
+vbell off
+startup_message off
+term xterm-256color
+defscrollback 100000
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
+altscreen on
+
+backtick 1 5 5 /usr/local/bin/battery -p -s
